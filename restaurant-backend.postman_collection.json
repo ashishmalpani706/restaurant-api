@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "ba777e03-d983-4b6d-b179-39a3083c4bfe",
+		"name": "restaurant-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "restaurant",
+			"description": "",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8080/restaurants/all-restaurants",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/restaurants/all-restaurants",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants",
+								"all-restaurants"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/restaurants/find-restaurant/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/restaurants/find-restaurant/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants",
+								"find-restaurant",
+								"10"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/restaurants/add-new-restaurant",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Luettgen-Swift\",\n    \"address\": \"4559 Otha Run\\nEast Jairo, MS 66079\",\n    \"pin_code\": \"02585\",\n    \"brand\": \"Sporer-Gleichner\",\n    \"yelp_reviews\": 3.06\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/restaurants/add-new-restaurant",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants",
+								"add-new-restaurant"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/restaurants/delete-restaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/restaurants/delete-restaurant/21",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants",
+								"delete-restaurant",
+								"21"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/restaurants/update-restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"restaurant_id\": 20,\n    \"name\": \"Papa Johns\",\n    \"address\": \"Blacksburg, Virginia, 24061\",\n    \"pin_code\": \"24060\",\n    \"brand\": \"Papa Johns Ltd.\",\n    \"yelp_reviews\": 4.6\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/restaurants/update-restaurant",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants",
+								"update-restaurant"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "menu",
+			"description": "",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8080/menu/all-menus",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu/all-menus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu",
+								"all-menus"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu/find-menu/10",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu/find-menu/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu",
+								"find-menu",
+								"10"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu/add-new-menu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menu_id\": 21,\n    \"restaurant_id\": 12,\n    \"menu_type\": \"LUNCH\",\n    \"start_time\": \"16:46:32\",\n    \"end_time\": \"12:54:14\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu/add-new-menu",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu",
+								"add-new-menu"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu/delete-menu/",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu/delete-menu/21",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu",
+								"delete-menu",
+								"21"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu/add-new-menu Copy",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menu_id\": 19,\n    \"restaurant_id\": 18,\n    \"menu_type\": \"DINNER\",\n    \"start_time\": \"12:20:13\",\n\t\"end_time\": \"23:23:00\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu/update-menu",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu",
+								"update-menu"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "menu-items",
+			"description": "",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8080/menu-items/all-menu-items",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu-items/all-menu-items",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu-items",
+								"all-menu-items"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu/find-menu-item/10",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu-items/find-menu-item/100",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu-items",
+								"find-menu-item",
+								"100"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu-items/add-new-menu-item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"item_id\": 101,\n    \"menu_id\": 14,\n    \"item_name\": \"Sphagetti\",\n    \"price\": 7.96\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu-items/add-new-menu-item",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu-items",
+								"add-new-menu-item"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu-items/delete-menu-item",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu-items/delete-menu-item/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu-items",
+								"delete-menu-item",
+								"101"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/menu-items/add-new-menu-item Copy",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"item_id\": 100,\n    \"menu_id\": 13,\n    \"item_name\": \"Papaya milk shake\",\n    \"price\": 11.25\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/menu-items/update-menu-item",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"menu-items",
+								"update-menu-item"
+							]
+						},
+						"description": "GET request for fetching all restaurants."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
